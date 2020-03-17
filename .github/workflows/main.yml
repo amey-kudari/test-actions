@@ -24,7 +24,6 @@ jobs:
       with:
         version: ${{ matrix.node_version }}
 
-    - name: action
+    - name: run a.ts
       run: |
-        echo "env : ${{ env.context }}"
-
+        node ./github-actions/a.ts
